@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "versionCode": 10,
+  "romUrl": "BURAYA_ZIP_LINKINI_YAZACAKSIN",
+  "filename": "nexus-experience-goyawifi-ota1",
+  "md5": "",
+  "size": 0,
+  "changelog": "Testing HW Acculeration. First OTA version is ready to go.",
+  "force": false
+}
