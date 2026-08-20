@@ -5,6 +5,6 @@
   "filename": "nexus-experience-goyawifi-ota3",
   "md5": "",
   "size": 0,
-  "changelog": "HW Acculeration has been added. Firefox app added. OTA system and data folder added. New launcher app. ",
+  "changelog": "HW Acculeration has been added. Firefox app added. OTA system and data folder added. New launcher app. Testing sound. Mediaserver dies and bootloop starts ",
   "force": false
 }
