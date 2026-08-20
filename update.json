@@ -5,6 +5,6 @@
   "filename": "nexus-experience-goyawifi-ota1",
   "md5": "",
   "size": 0,
-  "changelog": "Testing HW Acculeration. First OTA version is ready to go.",
+  "changelog": "Testing HW Acculeration. Firefox app added. OTA system and data folder added. New launcher and new settings app. ",
   "force": false
 }
