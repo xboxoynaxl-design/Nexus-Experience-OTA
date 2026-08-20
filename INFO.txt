@@ -1,0 +1,2 @@
+OTA4-WIP12 is normally ready but there is nearly no difference so we are gonna skip that version in GitHub and continue with OTA5-WIP13
+To get OTA4-WIP12, visit XDA post:https://xdaforums.com/t/t110-t111-beta-4-4-4-nexus-experience-for-sm-t110.4793848/
