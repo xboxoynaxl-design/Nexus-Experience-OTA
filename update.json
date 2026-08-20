@@ -1,8 +1,8 @@
 {
-  "version": "1.1",
-  "versionCode": 11,
-  "romUrl": "https://www.mediafire.com/file/5re7o0kyizc0eut/nexus-experience-goyawifi-ota2-wip10.zip/file",
-  "filename": "nexus-experience-goyawifi-ota2",
+  "version": "1.2",
+  "versionCode": 12,
+  "romUrl": "https://www.mediafire.com/file/8lpercwc3ljjji6/nexus-experience-goyawifi-ota3-wip11.zip/file",
+  "filename": "nexus-experience-goyawifi-ota3",
   "md5": "",
   "size": 0,
   "changelog": "HW Acculeration has been added. Firefox app added. OTA system and data folder added. New launcher app. ",
