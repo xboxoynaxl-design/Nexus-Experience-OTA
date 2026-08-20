@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>OTA Update (Nexus)</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0D47A1;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px 20px;
+            max-width: 400px;
+            margin: 30px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #1565C0;
+            border-radius: 20px;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+        h1 {
+            color: #1565C0;
+            font-size: 22px;
+            margin: 10px 0 20px 0;
+        }
+        #status {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        #changelog {
+            text-align: left;
+            background-color: #E3F2FD;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: none;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            margin-top: 10px;
+        }
+        #checkBtn {
+            background-color: #1565C0;
+        }
+        #downloadBtn {
+            background-color: #2E7D32;
+            display: none;
+        }
+        .info {
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">OTA<br>UPDATE</div>
+        <h1>OTA Update (Nexus)</h1>
+
+        <div id="status">
+            Press the button to check for updates.
+        </div>
+
+        <div id="changelog"></div>
+
+        <button id="checkBtn" onclick="checkUpdate()">Check for Updates</button>
+        <button id="downloadBtn" onclick="downloadRom()">Download Update</button>
+
+        <div class="info">
+            After downloading, reboot to Recovery and flash the zip file.
+        </div>
+    </div>
+
+    <script>
+        var jsonUrl = "https://raw.githubusercontent.com/xboxoynaxl-design/Nexus-Experience-OTA/main/update.json";
+        var romUrl = "";
+        var filename = "update.zip";
+        var remoteVersionCode = 0;
+
+        function getCurrentVersion() {
+            var v = localStorage.getItem("nexus_ota_version");
+            return v ? parseInt(v) : 0;
+        }
+
+        function saveCurrentVersion(code) {
+            localStorage.setItem("nexus_ota_version", code);
+        }
+
+        function checkUpdate() {
+            var status = document.getElementById("status");
+            var changelogDiv = document.getElementById("changelog");
+            var downloadBtn = document.getElementById("downloadBtn");
+            var checkBtn = document.getElementById("checkBtn");
+
+            status.innerHTML = "Checking server...";
+            checkBtn.disabled = true;
+            downloadBtn.style.display = "none";
+            changelogDiv.style.display = "none";
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", jsonUrl + "?t=" + new Date().getTime(), true);
+            xhr.timeout = 15000;
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    checkBtn.disabled = false;
+
+                    if (xhr.status === 200) {
+                        try {
+                            var data = JSON.parse(xhr.responseText);
+                            remoteVersionCode = data.versionCode;
+                            romUrl = data.romUrl || "";
+                            filename = data.filename || "update.zip";
+                            var version = data.version || "?";
+                            var changelog = data.changelog || "";
+
+                            var current = getCurrentVersion();
+
+                            if (remoteVersionCode > current) {
+                                status.innerHTML = "New update available!<br><br>" +
+                                    "Current: " + current + "<br>" +
+                                    "New: " + remoteVersionCode + " (" + version + ")";
+                                
+                                if (changelog) {
+                                    changelogDiv.innerHTML = "<b>Changelog:</b><br>" + changelog.replace(/\n/g, "<br>");
+                                    changelogDiv.style.display = "block";
+                                }
+                                downloadBtn.style.display = "block";
+                            } else {
+                                status.innerHTML = "Your ROM is up to date.<br><br>" +
+                                    "Current version: " + current + "<br>" +
+                                    "Server: " + remoteVersionCode;
+                            }
+                        } catch (e) {
+                            status.innerHTML = "Failed to read update information.";
+                        }
+                    } else {
+                        status.innerHTML = "Connection error!<br>Please check your internet.";
+                    }
+                }
+            };
+
+            xhr.ontimeout = function() {
+                checkBtn.disabled = false;
+                status.innerHTML = "Connection timeout. Try again.";
+            };
+
+            xhr.onerror = function() {
+                checkBtn.disabled = false;
+                status.innerHTML = "Connection error!<br>Please check your internet.";
+            };
+
+            xhr.send();
+        }
+
+        function downloadRom() {
+            if (!romUrl || romUrl.indexOf("BURAYA_ZIP") !== -1 || romUrl === "") {
+                alert("No valid download link yet!");
+                return;
+            }
+
+            saveCurrentVersion(remoteVersionCode);
+            window.location.href = romUrl;
+
+            alert("Download started!\n\nAfter it finishes:\n1. Reboot to Recovery\n2. Flash the zip file\n3. Reboot system");
+        }
+    </script>
+</body>
+</html>
