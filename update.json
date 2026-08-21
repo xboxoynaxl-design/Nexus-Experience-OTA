@@ -1,10 +1,10 @@
 {
-  "version": "1.2",
-  "versionCode": 12,
-  "romUrl": "https://www.mediafire.com/file/8lpercwc3ljjji6/nexus-experience-goyawifi-ota3-wip11.zip/file",
-  "filename": "nexus-experience-goyawifi-ota3",
+  "version": "1.3",
+  "versionCode": 13,
+  "romUrl": "https://www.mediafire.com/file/bwudz6m3c9zwq24/nexus-experience-goyawifi-ota4-wip12.zip/file",
+  "filename": "nexus-experience-goyawifi-ota4",
   "md5": "",
   "size": 0,
-  "changelog": "HW Acculeration has been added. Firefox app added. OTA system and data folder added. New launcher app. Testing sound. Mediaserver dies and bootloop starts ",
+  "changelog": "HW Acculeration has been added but switched to the OpenGL for better performance. Firefox app added. OTA system and data folder added. New launcher app. Testing sound. Mediaserver dies and bootloop starts ",
   "force": false
 }
