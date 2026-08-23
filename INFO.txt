@@ -1,1 +1,3 @@
 stable releases gonna come soon,you can look stabletest files from stabletest tag
+
+For WIP 14, we implemented optimization codes and updated `build.prop`. Then, I think we should delete `hwcomposer` and fix `sales_code.dat`. For WIP 15, we'll put `hwcomposer` back and set up a bridge.
