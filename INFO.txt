@@ -1,3 +1,9 @@
 stable releases gonna come soon,you can look stabletest files from stabletest tag
+ New offical update list:
+Tiny Update - OTA7-WIP14.5 - Sound Test - Fixing Bootloop - No HW ACCULTURATION - Tomorrow Released
 
-For WIP 14, we implemented optimization codes and updated `build.prop`. Then, I think we should delete `hwcomposer` and fix `sales_code.dat`. For WIP 15, we'll put `hwcomposer` back and set up a bridge.
+Big Update - OTA8-WIPX - HW Acculturation Bridge + Sound Test - September 5
+
+you can update using ota (index.html) in data/media/0/ota/index.html (needs internet) (only downloads and checks new update zip. you have to flash yourself)
+
+have a nice day!
