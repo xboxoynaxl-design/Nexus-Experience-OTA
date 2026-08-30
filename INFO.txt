@@ -1,6 +1,5 @@
 stable releases gonna come soon,you can look stabletest files from stabletest tag
  New offical update list:
-Tiny Update - OTA7-WIP14.5 - Sound Test - Fixing Bootloop - No HW ACCULTURATION - Tomorrow Released
 
 Big Update - OTA8-WIPX - HW Acculturation Bridge + Sound Test - September 5
 
