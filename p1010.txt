@@ -5,6 +5,14 @@ https://youtu.be/L-xpTVFgibU?si=-P4WWfn_Cr5y5PdQ
 
 4.1 base: https://archive.org/download/cmarchive_snapshots/cm-10-20121011-EXPERIMENTAL-p970-M2.zip
 
+Installation Instructions:
+Flash madteam's CWM recovery https://sourceforge.net/projects/jbromgtp1010bk2/files/madteam-cwm-p1010-kpi.tar/download using Odin3 on PDA slot.
+Insert a SD Card of atleast 16GB (32GB and above recommended)
+Enter CWM Recovery, wipe cache, and dalvik cache (do NOT wipe data if that's where your ROM is)
+Make sure to mount the SD Card, and backup all data on it, as everything will be wiped and formatted
+After wiping proceed to flash the ROM (do NOT put the file on SD Card!!! Rather put it on the Internal Storage!!!), process might take sometime over 10 minutes.
+Reboot the system and enjoy! First boot should take somewhat over 20 minutes
+
 4.2 base:
 https://archive.org/download/cmarchive_nighlies/cm-10.1-20140216-NIGHTLY-p970.zip
 
