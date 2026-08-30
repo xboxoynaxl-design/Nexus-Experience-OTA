@@ -5,6 +5,6 @@
   "filename": "nexus-experience-goyawifi-ota5",
   "md5": "",
   "size": 0,
-  "changelog": "HW Acculeration has been added but switched to the OpenGL for better performance. Firefox app added. OTA system and data folder added. New launcher app. Testing sound. Testing camera and fixing black screen isue ",
+  "changelog": "HW Acculeration still on progress. Firefox app added. OTA system and data folder added. New launcher app. Testing sound.",
   "force": false
 }
