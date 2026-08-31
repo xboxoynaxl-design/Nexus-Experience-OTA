@@ -1,7 +1,10 @@
 Info Video:
 https://youtu.be/L-xpTVFgibU?si=-P4WWfn_Cr5y5PdQ
 
-4.0 base: https://mega.nz/file/PEF10bgD#J0t0HF3BW2nr_E-0HlS7zfvliHF48nJ-L1aIgXG5DSI
+First WIP Build:
+4.0 base: https://mega.nz/file/PEF10bgD#J0t0HF3BW2nr_E-0HlS7zfvliHF48nJ-L1aIgXG5DSI 
+4.0 wifi and bluetooth base device: Motorola Xoom (Wi-Fi - MZ604)
+
 
 4.1 base: https://archive.org/download/cmarchive_snapshots/cm-10-20121011-EXPERIMENTAL-p970-M2.zip
 
@@ -10,6 +13,7 @@ https://youtu.be/L-xpTVFgibU?si=-P4WWfn_Cr5y5PdQ
 https://archive.org/download/cmarchive_nighlies/cm-10.1-20140216-NIGHTLY-p970.zip
 
 4.4 base:https://androidfilehost.com/?fid=24052804347773806#google_vignette
+
 
 <all bases resources. these are not p1010 builds. these are resources. do not install or flash them>
 
