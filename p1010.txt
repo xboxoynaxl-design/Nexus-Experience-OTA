@@ -6,7 +6,8 @@ First WIP Build:
 4.0 wifi and bluetooth base device: Motorola Xoom (Wi-Fi - MZ604)
 4.0 cpu and gpu (hwcomposer and egl) base device: LG Optimus Black (P970)
 4.0 audio drivers base device: Google Nexus S (GT-I9020 / I9023)
-<Touch and screen drivers from GT-P1010 2.3.6 stock>
+4.0 power management base device: Samsung Galaxy S (GT-I9000) 
+<Touch, Hardware Keys and screen drivers from GT-P1010 2.3.6 stock>
 
 
 4.1 base: https://archive.org/download/cmarchive_snapshots/cm-10-20121011-EXPERIMENTAL-p970-M2.zip
