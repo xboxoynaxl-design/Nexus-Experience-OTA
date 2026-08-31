@@ -5,6 +5,7 @@ First WIP Build:
 4.0 base: https://mega.nz/file/PEF10bgD#J0t0HF3BW2nr_E-0HlS7zfvliHF48nJ-L1aIgXG5DSI 
 4.0 wifi and bluetooth base device: Motorola Xoom (Wi-Fi - MZ604)
 4.0 cpu and gpu (hwcomposer and egl) base device: LG Optimus Black (P970)
+4.0 camera and audio base device:
 
 
 4.1 base: https://archive.org/download/cmarchive_snapshots/cm-10-20121011-EXPERIMENTAL-p970-M2.zip
