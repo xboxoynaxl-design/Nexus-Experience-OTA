@@ -46,3 +46,5 @@ Enter CWM Recovery, wipe cache, and dalvik cache (do NOT wipe data if that's whe
 Make sure to mount the SD Card, and backup all data on it, as everything will be wiped and formatted
 After wiping proceed to flash the ROM (do NOT put the file on SD Card!!! Rather put it on the Internal Storage!!!), process might take sometime over 10 minutes.
 Reboot the system and enjoy! First boot should take somewhat over 20 minutes
+
+CHECK OUT THE OTHER REPO FOR P1010
