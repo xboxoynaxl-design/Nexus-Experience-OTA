@@ -2,7 +2,6 @@ Nexus Experience Offical Team (NEOT)
 -Momonono71 ~the tester~
 -NeptuneTechAndAviationFan ~the poster, the main tester, idea giver~
 -P1010mod ~The Owner and the Developer~
-~randomrally25~ ~ The Second Developer (expect P1010 and SM-T110)~
 OTA System is only available on SM-T110 roms Use ota system using the index.html from data/media/0/ota/index.html (needs internet) (only downloads and checks new update zip. you have to flash yourself)
 Our offical GitHub: https://github.com/xboxoynaxl-design/Nexus-Experience-OTA
 Our ROM Projects:
