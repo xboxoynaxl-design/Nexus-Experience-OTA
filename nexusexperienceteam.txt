@@ -7,6 +7,7 @@ Our offical GitHub: https://github.com/xboxoynaxl-design/Nexus-Experience-OTA
 Our ROM Projects:
 P1010 4.4.4: https://xdaforums.com/t/closed-proj...m-by-neptune-and-ozgur.4790698/#post-90716460
 SM-T110 4.4.4:https://xdaforums.com/t/t110-t111-b...ence-for-sm-t110.4793848/page-5#post-90713585
+GT-I9082 4.4.4: https://xdaforums.com/t/rom-wip-4-4-4-nexus-experience-for-baffin.4800387/
 Offical YouTube Channel: https://m.youtube.com/@Nexus-Experience/videos
 Also, Checkout this channel: https://m.youtube.com/@NeptuneTechAndAV
 If you want to join the project, open an conversation with @P1010mod in XDA Forums
