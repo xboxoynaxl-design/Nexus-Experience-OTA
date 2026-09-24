@@ -5,6 +5,6 @@
   "filename": "nexus-experience-goyawifi-ota5",
   "md5": "",
   "size": 0,
-  "changelog": "HW Acculeration still on progress. Firefox app added. OTA system and data folder added. New launcher app. Testing sound.",
+  "changelog": "Bootlooping outdated WIP. Use stable-test: https://github.com/xboxoynaxl-design/Nexus-Experience-OTA/releases/tag/CustomROMStableTest Firefox app added. OTA system and data folder added. New launcher app.",
   "force": false
 }
