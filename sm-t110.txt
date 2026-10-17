@@ -1,7 +1,4 @@
 stable releases gonna come soon,you can look stabletest files from stabletest tag
- New offical update list:
-
-Big Update - OTA8-WIPX - HW Acculturation Bridge + Sound Test - September 5
 
 you can update using ota (index.html) in data/media/0/ota/index.html (needs internet) (only downloads and checks new update zip. you have to flash yourself)
 
