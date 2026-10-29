@@ -1,0 +1,9 @@
+WIP 9 (version 9) and upper versions have OTA included in data/media/0/ota/index.html
+If it doesn't works, you cannot access the storage, gives error, or you're using and older version, you can use;
+
+You can use https://a3v9.github.io/NexusExperience-Repository/
+for downloading ROMs too!
+Our official website: https://xboxoynaxl-design.github.io/nexusexperienceofficialsite
+
+
+-Regards @AnUndefinedDeveloper Owner and the Developer of Nexus Experience
